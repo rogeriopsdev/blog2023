@@ -23,7 +23,7 @@ class Post(models.Model):
 class Tema(models.Model):
     idtema = models.IntegerField(primary_key=True)
     nome_tema = models.CharField(max_length=45)
-    foto_tema = models.TextField(blank=True, null=True)
+    foto_tema = models.ImageField(blank=True, null=True)
 
     class Meta:
         managed = False

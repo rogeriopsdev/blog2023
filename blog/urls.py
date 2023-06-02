@@ -15,9 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from blogapp.views import index
+from blogapp.views import index, cad_tema, temas
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', index , name ='index'),
+    path('cad_tema/', cad_tema , name ='cad_tema'),
+    path('temas/', temas , name ='temas'),
 ]

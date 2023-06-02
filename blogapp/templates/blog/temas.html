@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/bootstrap.css">
+    <meta charset="UTF-8">
+    <title>Temas</title>
+</head>
+<body>
+<table class="table ">
+    <thead class="table-danger">
+    <tr>
+        <th>Id</th>
+        <th>Nome Tema</th>
+        <th>Foto</th>
+        <th>Editar</th>
+        <th>Excluir</th>
+        <th>Sair</th>
+    </tr>
+
+    </thead>
+    <tbody>
+    {% for t in temas %}
+    <tr>
+        <th>{{t.idtema}}</th>
+        <th>{{t.nome_tema}}</th>
+        <th><img src="{{t.foto_tema}}" alt="foto aqui"></th>
+        <th><a href="" class="btn btn-warning">Editar</a></th>
+        <th><a href="" class="btn btn-danger">Excluir</a></th>
+        <th><a href="" class="btn btn-primary">Voltar</a></th>
+    </tr>
+    {% endfor %}
+
+    </tbody>
+</table>
+
+</body>
+</html>
